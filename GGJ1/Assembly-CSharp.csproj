@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\camera.cs" />
+     <Compile Include="Assets\Script\golfball.cs" />
      <Compile Include="Assets\Script\player.cs" />
      <Compile Include="Assets\Script\trap.cs" />
  <Reference Include="UnityEngine.UI">
