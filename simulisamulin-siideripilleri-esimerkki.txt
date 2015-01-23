@@ -1,0 +1,7 @@
+lähetä jotain paskaa:
+1. "git add ." ---> lisää muokatut tiedostot
+2. "git commit" ---> kirjoita kommentti lisäykselle (esim. "saatana perkele"
+3. "git push" ---> lähetä tiedostot
+
+hae jotain paskaa:
+1. "git pull" ---> paskaa tippuu
