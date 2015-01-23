@@ -1,0 +1,7 @@
+ilmapallo-akkulaturi:
+
+1. pelaaja hankaa ilmapalloa hahmon p‰‰h‰n ja lataa varausta
+2. pelaaja survaisee kunnon 9volttisen patterin p‰‰h‰ns‰
+3. patteri latautuu
+
+huom: jos patteri survaistaan ilmapallon kanssa yht‰ aikaa, pallo posahtaa ja patteri pamahtaa
