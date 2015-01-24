@@ -55,6 +55,7 @@
      <Compile Include="Assets\Script\duett.cs" />
      <Compile Include="Assets\Script\golfball.cs" />
      <Compile Include="Assets\Script\golfball1.cs" />
+     <Compile Include="Assets\Script\haviotassu.cs" />
      <Compile Include="Assets\Script\hockey_eye.cs" />
      <Compile Include="Assets\Script\hockey_selector.cs" />
      <Compile Include="Assets\Script\hockey_tackler.cs" />
@@ -64,6 +65,7 @@
      <Compile Include="Assets\Script\meteori.cs" />
      <Compile Include="Assets\Script\munasolu.cs" />
      <Compile Include="Assets\Script\muuSiittio.cs" />
+     <Compile Include="Assets\Script\nappis.cs" />
      <Compile Include="Assets\Script\oikeaPannu.cs" />
      <Compile Include="Assets\Script\pannu.cs" />
      <Compile Include="Assets\Script\player.cs" />
@@ -76,6 +78,7 @@
      <Compile Include="Assets\Script\trap.cs" />
      <Compile Include="Assets\Script\traps.cs" />
      <Compile Include="Assets\Script\vana.cs" />
+     <Compile Include="Assets\Script\voittotassu.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
