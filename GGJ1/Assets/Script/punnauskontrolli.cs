@@ -35,30 +35,45 @@ public class punnauskontrolli : MonoBehaviour {
     public bool punnausvaihe = true;
     public float huilausaika = 0;
 
+    public bool peliohi = false;
     public bool voitto = false;
     public GameObject oikeaverho;
     public GameObject vasenverho;
+
+    public GameObject kontrolleri;
 
 	// Use this for initialization
 	void Start () {
         paarender = paa.GetComponent<SpriteRenderer>();
         paskatavoite = 3 + Random.Range(0, 5);
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (voitto){
+        if (punnauskerroin > 3) punnauskerroin = 3f;
+
+        if (peliohi){
             paarender.color = new Color(paarender.color.r, paarender.color.g + 0.1f, paarender.color.g + 0.1f);
             if (paa.transform.localScale.x > 1) paa.transform.localScale = new Vector3(paa.transform.localScale.x - Time.deltaTime / 5, paa.transform.localScale.y - Time.deltaTime / 5);
             oikeaverho.GetComponent<punnariesiriippu>().auki = false;
             vasenverho.GetComponent<punnariesiriippu>().auki = false;
+            paa_anim.SetBool("rajahti", false);
+            if (oikeaverho.GetComponent<punnariesiriippu>().avonaisuus < 0.2)
+            {
+                Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+                if (voitto) skripti.totalscore++;
+                else skripti.lives--;
+                skripti.randomkentta();
+            }
         }
         else{
 
         // punnataan
         if (punnausvaihe)
         {
+            paa_anim.SetBool("irvistys", false);
             if (punnailee)
             {
                 punnailutimer = punnailutimer + Time.deltaTime;
@@ -87,6 +102,15 @@ public class punnauskontrolli : MonoBehaviour {
                 //paarender.color = new Color(paarender.color.r, paarender.color.g + 0.03f, paarender.color.b + 0.03f);
 
             //kontrollit
+
+            if (paa.transform.localScale.x > 1.5)
+            {
+                punnausvaihe = false;
+                peliohi = true;
+                paa_anim.SetBool("rajahti", true);
+                
+            }
+
             if (Input.GetKeyDown("left"))
             {
                 if (lastpress != 0)
@@ -129,7 +153,8 @@ public class punnauskontrolli : MonoBehaviour {
             //kjäh, punnaa-punnaa
             if (Input.GetKeyDown("up"))
             {
-                punnauskerroin++;
+                punnauskerroin = punnauskerroin + 0.5f;
+                paa_anim.SetBool("irvistys", true);
             }
 
         } else
@@ -158,8 +183,9 @@ public class punnauskontrolli : MonoBehaviour {
         variarvo = 0;
         paa_anim.SetBool("helpotus", true);
         paskamaara++;
-        if (paskamaara == paskatavoite)
+        if (paskamaara >= paskatavoite)
         {
+            peliohi = true;
             voitto = true;
             animaattori.SetBool("punnaaminen", false);
         }

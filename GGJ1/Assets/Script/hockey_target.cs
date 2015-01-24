@@ -19,9 +19,12 @@ public class hockey_target : MonoBehaviour {
     public bool olikooikein;
     private bool ohitti = false;
 
+    public GameObject kontrolleri;
+
 	// Use this for initialization
 	void Start () {
         skaalaus = transform.localScale;
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
 	}
 	
 	// Update is called once per frame
@@ -35,6 +38,10 @@ public class hockey_target : MonoBehaviour {
         {
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
             ohitti = true;
+
+            Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+            skripti.randomkentta();
+            skripti.lives--;
         }
 
         if (pyllahdys)
@@ -59,6 +66,10 @@ public class hockey_target : MonoBehaviour {
             {
                 SpriteRenderer rendereri = gameObject.GetComponent<SpriteRenderer>();
                 rendereri.sortingOrder = 2;
+
+                Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+                skripti.totalscore++;
+                skripti.randomkentta();
             }
 
 
