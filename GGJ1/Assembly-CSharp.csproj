@@ -57,10 +57,16 @@
      <Compile Include="Assets\Script\hockey_target.cs" />
      <Compile Include="Assets\Script\munasolu.cs" />
      <Compile Include="Assets\Script\muuSiittio.cs" />
+     <Compile Include="Assets\Script\oikeaPannu.cs" />
+     <Compile Include="Assets\Script\pannu.cs" />
      <Compile Include="Assets\Script\player.cs" />
      <Compile Include="Assets\Script\playerSiittio.cs" />
+     <Compile Include="Assets\Script\punnariesiriippu.cs" />
+     <Compile Include="Assets\Script\punnarinpaska.cs" />
+     <Compile Include="Assets\Script\punnauskontrolli.cs" />
      <Compile Include="Assets\Script\starship.cs" />
      <Compile Include="Assets\Script\trap.cs" />
+     <Compile Include="Assets\Script\vana.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
