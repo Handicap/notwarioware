@@ -49,7 +49,9 @@
      <Compile Include="Assets\Script\camera.cs" />
      <Compile Include="Assets\Script\golfball.cs" />
      <Compile Include="Assets\Script\golfball1.cs" />
+     <Compile Include="Assets\Script\muuSiittio.cs" />
      <Compile Include="Assets\Script\player.cs" />
+     <Compile Include="Assets\Script\playerSiittio.cs" />
      <Compile Include="Assets\Script\starship.cs" />
      <Compile Include="Assets\Script\trap.cs" />
  <Reference Include="UnityEngine.UI">

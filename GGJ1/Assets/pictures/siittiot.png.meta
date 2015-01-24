@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 624e22ed50d59b1419c87c8c3384286d
+guid: 7b42444faed80b343a971cc429ddc637
 TextureImporter:
   fileIDToRecycleName:
-    21300000: rakettelipeliraketti_strip3_0
-    21300002: rakettelipeliraketti_strip3_1
-    21300004: rakettelipeliraketti_strip3_2
+    21300000: siittiot_0
+    21300002: siittiot_1
+    21300004: siittiot_2
+    21300006: siittiot_3
+    21300008: siittiot_4
+    21300010: siittiot_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -46,33 +49,63 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: rakettelipeliraketti_strip3_0
+    - name: siittiot_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 27
-        width: 38
-        height: 16
+        x: 8
+        y: 84
+        width: 52
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rakettelipeliraketti_strip3_1
+    - name: siittiot_1
       rect:
         serializedVersion: 2
-        x: 75
-        y: 27
-        width: 36
-        height: 16
+        x: 73
+        y: 84
+        width: 52
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: rakettelipeliraketti_strip3_2
+    - name: siittiot_2
       rect:
         serializedVersion: 2
-        x: 139
-        y: 27
-        width: 36
-        height: 16
+        x: 16
+        y: 43
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: siittiot_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 43
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: siittiot_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 6
+        width: 44
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: siittiot_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 6
+        width: 44
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
