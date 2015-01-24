@@ -12,6 +12,8 @@ public class playerSiittio : MonoBehaviour {
     public GameObject target;
     public Vector3 direction;
 
+    public GameObject solu;
+
     public int hits = 10;
     
 	// Use this for initialization
@@ -36,7 +38,7 @@ public class playerSiittio : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
 
-
+            
             rigidbody2D.velocity = direction * speed;
 
             angle += 40 * Time.deltaTime * rotationSpeed;
@@ -85,12 +87,15 @@ public class playerSiittio : MonoBehaviour {
 
     void win()
     {
-        Debug.Log("you win");
+        
+        solu.SendMessage("rajahda");
+
     }
 
 
     void lose()
     {
         Debug.Log("you lose");
+         //or if distance < attactDistance * 2
     }
 }
