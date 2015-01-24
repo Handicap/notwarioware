@@ -88,8 +88,9 @@ public class playerSiittio : MonoBehaviour {
     void win()
     {
         
-        solu.SendMessage("rajahda");
 
+        solu.SendMessage("rajahda");
+        Destroy(gameObject);
     }
 
 
