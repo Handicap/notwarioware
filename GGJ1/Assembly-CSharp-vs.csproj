@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\Avaruusalus.cs" />
+     <Compile Include="Assets\Script\alalauta.cs" />
      <Compile Include="Assets\Script\camera.cs" />
      <Compile Include="Assets\Script\controller\Game_logic_controller.cs" />
      <Compile Include="Assets\Script\controller\Singleton.cs" />
@@ -66,6 +67,7 @@
      <Compile Include="Assets\Script\punnariesiriippu.cs" />
      <Compile Include="Assets\Script\punnarinpaska.cs" />
      <Compile Include="Assets\Script\punnauskontrolli.cs" />
+     <Compile Include="Assets\Script\saha.cs" />
      <Compile Include="Assets\Script\starship.cs" />
      <Compile Include="Assets\Script\trap.cs" />
      <Compile Include="Assets\Script\vana.cs" />
