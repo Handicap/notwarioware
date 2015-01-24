@@ -1,1 +1,13 @@
 C:\Users\Matias\Documents\GGJ1\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\obj\Debug\Assembly-CSharp.dll
+C:\Users\Matias\Desktop\GIT2\notwarioware\GGJ1\obj\Debug\Assembly-CSharp.pdb

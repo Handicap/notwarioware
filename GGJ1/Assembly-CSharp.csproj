@@ -52,6 +52,7 @@
      <Compile Include="Assets\Script\controller\Game_logic_controller.cs" />
      <Compile Include="Assets\Script\controller\Singleton.cs" />
      <Compile Include="Assets\Script\controller\levelsailo.cs" />
+     <Compile Include="Assets\Script\duett.cs" />
      <Compile Include="Assets\Script\golfball.cs" />
      <Compile Include="Assets\Script\golfball1.cs" />
      <Compile Include="Assets\Script\hockey_eye.cs" />
@@ -73,6 +74,7 @@
      <Compile Include="Assets\Script\saha.cs" />
      <Compile Include="Assets\Script\starship.cs" />
      <Compile Include="Assets\Script\trap.cs" />
+     <Compile Include="Assets\Script\traps.cs" />
      <Compile Include="Assets\Script\vana.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>

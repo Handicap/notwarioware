@@ -26,4 +26,27 @@ public class trap : MonoBehaviour {
 
         transform.Translate(0, Speed, 0);
 	}
+
+    public void stop()
+    {
+        Speed = 0;
+
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        Speed = 0;
+        //transform.Translate(0, 0, 0);
+        
+        transform.parent.SendMessage("stop");
+        StartCoroutine(thiscoroutine());
+
+    }
+
+
+    IEnumerator thiscoroutine()
+    {
+        yield return new WaitForSeconds(0.001f);
+        Destroy(gameObject);
+    }
 }

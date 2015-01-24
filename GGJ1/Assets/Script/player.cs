@@ -5,10 +5,10 @@ public class player : MonoBehaviour {
 
     public float angle;
     public float rotationSpeed = 3.0f;
-
+    
 	// Use this for initialization
 	void Start () {
-	
+        
 	}
 	
 	// Update is called once per frame
@@ -45,20 +45,13 @@ public class player : MonoBehaviour {
 	}
 
 
-    void OnCollisionEnter2D(Collision2D coll)
+    public void stop()
     {
-
-        endgame();
-     
+        rotationSpeed = 0;
     }
 
 
-    void endgame()
-    {
-        Destroy(gameObject);
-
-
-    }
+    
 
 
 }
