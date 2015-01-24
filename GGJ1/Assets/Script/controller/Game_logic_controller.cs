@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Game_logic_controller : MonoBehaviour {
 
-    public float totalscore;
+    public float totalscore = 0;
     public float timescale = 1.0f;
 
     // build settingseistä saa tasojen indeksit selville
@@ -14,7 +14,6 @@ public class Game_logic_controller : MonoBehaviour {
     public int nykyinenrandomi;
     public int pelattuja;
 
-    public int score_level;
     public int lives = 3;
 
     public int fade = 0;
@@ -52,6 +51,8 @@ public class Game_logic_controller : MonoBehaviour {
     {
         if (fade == -1) guiTexture.color = Color.Lerp(guiTexture.color, Color.clear, fadeSpeed * Time.deltaTime);
         if (fade == 1) guiTexture.color = Color.Lerp(guiTexture.color, Color.black, fadeSpeed * Time.deltaTime);
+
+        //if (lives < 1) uusikentta("score");
 
         if (guiTexture.color.a <= 0.05f && fade == -1)
         {
