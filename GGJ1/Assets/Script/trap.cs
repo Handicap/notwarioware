@@ -47,6 +47,6 @@ public class trap : MonoBehaviour {
     IEnumerator thiscoroutine()
     {
         yield return new WaitForSeconds(0.001f);
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }

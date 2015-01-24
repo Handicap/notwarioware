@@ -6,6 +6,7 @@ public class duett : MonoBehaviour {
     public Transform pari;
     public float etaisyys;
     private bool alustus = false;
+    public Transform hepo;
 
 	// Use this for initialization
 	void Start () {
@@ -31,7 +32,7 @@ public class duett : MonoBehaviour {
         anim.SetBool("pum", true);
         if (!alustus)
         {
-            this.transform.position = Vector3.MoveTowards(transform.position, pari.position, etaisyys);
+            //this.transform.position = Vector3.MoveTowards(transform.position, pari.position, etaisyys);
             alustus = true;
         }
 
