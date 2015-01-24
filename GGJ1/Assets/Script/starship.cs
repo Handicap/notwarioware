@@ -1,0 +1,69 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class starship : MonoBehaviour {
+    public float speed;
+    public float speed2;
+
+
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+
+        Vector3 position = this.transform.position;
+
+        position.x = position.x + speed;
+        this.transform.position = position;
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            position.y = position.y + speed2;
+            this.transform.position = position;
+        }
+        
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+
+            position.y = position.y - speed2;
+            this.transform.position = position;
+        }
+        
+
+	}
+
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+
+        if (coll.collider.tag == "maali")
+        {
+            win();
+        }
+
+        if (coll.collider.tag == "laita")
+        {
+            lose();
+        }
+
+
+    }
+
+    void win()
+    {
+        Debug.Log("you win");
+
+    }
+
+    void lose()
+    {
+        Debug.Log("you lose");
+
+    }
+
+
+}
