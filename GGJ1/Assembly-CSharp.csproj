@@ -51,12 +51,15 @@
      <Compile Include="Assets\Script\camera.cs" />
      <Compile Include="Assets\Script\controller\Game_logic_controller.cs" />
      <Compile Include="Assets\Script\controller\Singleton.cs" />
+     <Compile Include="Assets\Script\controller\levelsailo.cs" />
      <Compile Include="Assets\Script\golfball.cs" />
      <Compile Include="Assets\Script\golfball1.cs" />
      <Compile Include="Assets\Script\hockey_eye.cs" />
      <Compile Include="Assets\Script\hockey_selector.cs" />
      <Compile Include="Assets\Script\hockey_tackler.cs" />
      <Compile Include="Assets\Script\hockey_target.cs" />
+     <Compile Include="Assets\Script\menuvalintakohde.cs" />
+     <Compile Include="Assets\Script\menuvalitsin.cs" />
      <Compile Include="Assets\Script\meteori.cs" />
      <Compile Include="Assets\Script\munasolu.cs" />
      <Compile Include="Assets\Script\muuSiittio.cs" />
