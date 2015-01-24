@@ -7,6 +7,7 @@ public class trap : MonoBehaviour {
     public float Speed = -1f;
     public int type;
     static int count;
+    public float vali;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +16,7 @@ public class trap : MonoBehaviour {
 
         int rand = UnityEngine.Random.Range(-1, 2);
 
-        transform.position = new Vector3(1.8604f * rand, type * 5 + 20, 0); //= -1.8604f;
+        transform.position = new Vector3(1.8604f * rand, type * 5 + vali); //= -1.8604f;
 	}
 	
 	// Update is called once per frame

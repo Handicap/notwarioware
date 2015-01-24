@@ -29,12 +29,12 @@ public class saha : MonoBehaviour {
                 float step = speed * Time.deltaTime;
                 transform.position = Vector3.MoveTowards(transform.position, direct1, step);
 
-                speed = speed + (speed * 0.01f);
+                speed = speed + (speed * 0.03f);
 
                 if (transform.position.Equals(direct1))
                 {
                     vasenoikea = 1;
-                    direct2.y = direct2.y - 0.1f;
+                    direct2.y = direct2.y - 0.3f;
                 }
             }
         }
