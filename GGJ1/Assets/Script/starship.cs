@@ -4,11 +4,13 @@ using System.Collections;
 public class starship : MonoBehaviour {
     public float speed;
     public float speed2;
-
+    public bool losed = false;
+    Animator anim;
 
 	// Use this for initialization
 	void Start () {
-	
+
+        anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -56,12 +58,17 @@ public class starship : MonoBehaviour {
     void win()
     {
         Debug.Log("you win");
-
+        speed = 0;
+        speed2 = 0;
     }
 
     void lose()
     {
+        anim.SetBool("losed", true);
         Debug.Log("you lose");
+        losed = true;
+        speed = 0;
+        speed2 = 0;
 
     }
 

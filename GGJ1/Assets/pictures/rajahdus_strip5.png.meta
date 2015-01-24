@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 08a8b1a285f2b9e4ba6f525f18ce5036
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: rajahdus_strip5_0
+    21300002: rajahdus_strip5_1
+    21300004: rajahdus_strip5_2
+    21300006: rajahdus_strip5_3
+    21300008: rajahdus_strip5_4
+    21300010: rajahdus_strip5_5
+    21300012: rajahdus_strip5_6
+    21300014: rajahdus_strip5_7
+    21300016: rajahdus_strip5_8
+    21300018: rajahdus_strip5_9
+    21300020: rajahdus_strip5_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: rajahdus_strip5_0
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 54
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rajahdus_strip5_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 25
+        width: 89
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rajahdus_strip5_2
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 16
+        width: 100
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rajahdus_strip5_3
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 87
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rajahdus_strip5_4
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 63
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rajahdus_strip5_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 66
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rajahdus_strip5_6
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 66
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rajahdus_strip5_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 52
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rajahdus_strip5_8
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 22
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rajahdus_strip5_9
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 22
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rajahdus_strip5_10
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 22
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
