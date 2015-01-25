@@ -5,7 +5,6 @@ public class tvpeli_sheriff : MonoBehaviour {
 
     public GameObject laukaus;
     public bool fade = false;
-    public float fadeSpeed = 0.05f;
     public float timer = 0;
 
 
@@ -21,7 +20,7 @@ public class tvpeli_sheriff : MonoBehaviour {
         timer = timer + Time.deltaTime;
         if (fade)
         {
-            guiTexture.color = Color.Lerp(guiTexture.color, Color.red, timer);
+            guiTexture.color = Color.Lerp(guiTexture.color, Color.red, timer / 75);
         }
 	}
 

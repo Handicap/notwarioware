@@ -10,7 +10,7 @@ public class Game_logic_controller : MonoBehaviour {
     // tasotaulukon logiikka:
     // oliossa on levelin nimi, ja bool siitä onko pelattu jo
     public string[] tasot;
-    public bool[] pelatut;
+    public bool[] pelatut; 
     public int nykyinenrandomi;
     public int pelattuja;
 
@@ -22,7 +22,6 @@ public class Game_logic_controller : MonoBehaviour {
         public string nextlevel;
         [Range(0f, 1f)]
         public float fadeSpeed = 1.5f;          // Speed that the screen fades to and from black.
-        private bool sceneStarting = true; 
 
     void Awake()
     {
@@ -31,6 +30,7 @@ public class Game_logic_controller : MonoBehaviour {
         fade = -1;
         // Set the texture so that it is the the size of the screen and covers it.
         guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
+        guiTexture.enabled = true;
         
     }
 

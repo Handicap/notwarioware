@@ -13,16 +13,19 @@ public class tvpeli_tv : MonoBehaviour {
     public bool[] nahty;
     public GameObject sheriffi;
 
+    public GameObject kasi;
+
     // 0 sheriffchancella tulee sheriffi
     public int sheriffchance = 1;
 
     private bool sheriffiarvottu = false;
 
     public float ajastin = 0f;
+    public GameObject kontrolleri;
 
 	// Use this for initialization
 	void Start () {
-	
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
 	}
 	
 	// Update is called once per frame
@@ -55,6 +58,13 @@ public class tvpeli_tv : MonoBehaviour {
             if (sheriffchance == 0)
             {
                 ohjelma = true;
+
+                //varmuuden vuoksi for
+                for (int i = 0; i < ohjelmat.Length; i++)
+                {
+                    ohjelmat[i].SetActive(false);
+                }
+
                 sheriffi.SetActive(true);
                 ajastin = 0;
             }
@@ -90,6 +100,12 @@ public class tvpeli_tv : MonoBehaviour {
         {
             tvpeli_sheriff sheriffiskripti = sheriffi.GetComponent<tvpeli_sheriff>();
             sheriffiskripti.ammu();
+            tvkasi kasiskripti = kasi.GetComponent<tvkasi>();
+            kasiskripti.ammuttu = true;
+
+            Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+            skripti.lives--;
+            skripti.randomkentta();
         }
 
 	}

@@ -78,6 +78,9 @@
      <Compile Include="Assets\Script\starship.cs" />
      <Compile Include="Assets\Script\trap.cs" />
      <Compile Include="Assets\Script\traps.cs" />
+     <Compile Include="Assets\Script\tvkasi.cs" />
+     <Compile Include="Assets\Script\tvpeli_sheriff.cs" />
+     <Compile Include="Assets\Script\tvpeli_tv.cs" />
      <Compile Include="Assets\Script\vana.cs" />
      <Compile Include="Assets\Script\voittotassu.cs" />
  <Reference Include="UnityEngine.UI">
