@@ -63,11 +63,8 @@
      <Compile Include="Assets\Script\hockey_target.cs" />
      <Compile Include="Assets\Script\horse.cs" />
      <Compile Include="Assets\Script\kelloskripti.cs" />
-<<<<<<< Updated upstream
-     <Compile Include="Assets\Script\laser.cs" />
-=======
      <Compile Include="Assets\Script\kelloskriptivoitto.cs" />
->>>>>>> Stashed changes
+     <Compile Include="Assets\Script\laser.cs" />
      <Compile Include="Assets\Script\menuvalintakohde.cs" />
      <Compile Include="Assets\Script\menuvalitsin.cs" />
      <Compile Include="Assets\Script\meteori.cs" />
@@ -82,6 +79,7 @@
      <Compile Include="Assets\Script\punnarinpaska.cs" />
      <Compile Include="Assets\Script\punnauskontrolli.cs" />
      <Compile Include="Assets\Script\saha.cs" />
+     <Compile Include="Assets\Script\siittiokamera.cs" />
      <Compile Include="Assets\Script\space1_camerafollow.cs" />
      <Compile Include="Assets\Script\starship.cs" />
      <Compile Include="Assets\Script\trap.cs" />
@@ -92,6 +90,9 @@
      <Compile Include="Assets\Script\vaki.cs" />
      <Compile Include="Assets\Script\vana.cs" />
      <Compile Include="Assets\Script\voittotassu.cs" />
+     <Compile Include="Assets\pictures\NewBehaviourScript.cs" />
+     <Compile Include="Assets\pictures\spurQ\naama.cs" />
+     <Compile Include="Assets\pictures\spurQ\spurq.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
