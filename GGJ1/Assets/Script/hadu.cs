@@ -15,6 +15,8 @@ public class hadu : MonoBehaviour {
 
     public GameObject kontrolleri;
 
+    public GameObject huuto;
+
     Animator anim;
 	// Use this for initialization
 	void Start () {
@@ -147,6 +149,7 @@ public class hadu : MonoBehaviour {
         {
             vaki[i].transform.SendMessage("pum");
         }
+        huuto.audio.Play();
         StartCoroutine(wincoroutine());
 
     }
