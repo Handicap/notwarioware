@@ -15,10 +15,14 @@ public class playerSiittio : MonoBehaviour {
     public GameObject solu;
 
     public int hits = 10;
+
+
+    public GameObject kontrolleri;
     
 	// Use this for initialization
 	void Start () {
         direction = new Vector3(0, 0, 0);
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
         
 	}
 	
@@ -98,5 +102,15 @@ public class playerSiittio : MonoBehaviour {
     {
         Debug.Log("you lose");
          //or if distance < attactDistance * 2
+        StartCoroutine(losecoroutine());
     }
+
+    IEnumerator losecoroutine()
+    {
+        yield return new WaitForSeconds(3.5f);
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.vahennaelama();
+        skripti.randomkentta();
+    }
+
 }

@@ -74,6 +74,15 @@ public class Game_logic_controller : MonoBehaviour {
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("ESCAPE");
+            if (Application.loadedLevel == 0) Application.Quit();
+            else Application.LoadLevel("main_menu");
+
+        }
+
         if (fade == -1) guiTexture.color = Color.Lerp(guiTexture.color, Color.clear, fadeSpeed * Time.deltaTime);
         if (fade == 1) guiTexture.color = Color.Lerp(guiTexture.color, Color.black, fadeSpeed * Time.deltaTime);
 
