@@ -25,6 +25,20 @@ public class hadu : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        
+
+        if (!a)
+        {
+            if (Input.anyKey)
+            {
+                
+               if (!Input.GetKey(KeyCode.DownArrow)) lose();
+            }
+        }
+
+
+        
+
         if (Input.GetKey(KeyCode.DownArrow))
         {
 
@@ -57,6 +71,9 @@ public class hadu : MonoBehaviour {
 
             }
         }
+
+
+        if (Input.GetKeyUp(KeyCode.DownArrow) && !b) lose();
 
         if (!b) return;
 
