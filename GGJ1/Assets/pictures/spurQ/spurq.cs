@@ -21,10 +21,11 @@ public class spurq : MonoBehaviour {
     public int moveaika;
     public Vector3 moveposition;
 
+    public GameObject kontrolleri;
 
 	// Use this for initialization
 	void Start () {
-
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
         oikea = UnityEngine.Random.Range(0, 7);
         
 	}
@@ -86,6 +87,7 @@ public class spurq : MonoBehaviour {
     {
         StartCoroutine(thiscoroutine2());
         StartCoroutine(thiscoroutine());
+        StartCoroutine(losecoroutine());
         
         end = true;
         suru();
@@ -96,6 +98,7 @@ public class spurq : MonoBehaviour {
     {
         StartCoroutine(thiscoroutine2());
         StartCoroutine(thiscoroutine());
+        StartCoroutine(wincoroutine());
         
         end = true;
         ilo();
@@ -145,5 +148,21 @@ public class spurq : MonoBehaviour {
             yield return new WaitForSeconds(0.1f);
             transform.localScale += new Vector3(kasvunopeus, kasvunopeus, kasvunopeus);
         }
+    }
+
+    IEnumerator losecoroutine()
+    {
+        yield return new WaitForSeconds(3.5f);
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.vahennaelama();
+        skripti.randomkentta();
+    }
+
+    IEnumerator wincoroutine()
+    {
+        yield return new WaitForSeconds(3.5f);
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.lisaapiste();
+        skripti.randomkentta();
     }
 }

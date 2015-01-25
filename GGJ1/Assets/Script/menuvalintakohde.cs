@@ -6,6 +6,7 @@ public class menuvalintakohde : MonoBehaviour {
     public string seuraavataso;
     public GameObject kontrolleri;
     public bool randomikentta;
+    public bool quit;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,7 @@ public class menuvalintakohde : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other)
     {
         Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        if (quit) Application.Quit();
         if (!randomikentta)
         {
             skripti.uusikentta(seuraavataso);

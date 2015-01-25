@@ -26,9 +26,27 @@ public class Game_logic_controller : MonoBehaviour {
     private bool pistelisatty = false;
     private bool henkilahtenyt = false;
 
+    private static Game_logic_controller instance = null;
+    public static Game_logic_controller Instance
+    {
+        get { return instance; }
+    }
+
 
     void Awake()
     {
+        // singletonihomma
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(this.gameObject);
+
         //Time.fixedDeltaTime ehkä pitää implementoida jos fysiikat sekoilee
         Time.timeScale = timescale;
         fade = -1;
@@ -111,4 +129,5 @@ public class Game_logic_controller : MonoBehaviour {
     {
         if (pistelisatty) totalscore++;
     }
+
 }

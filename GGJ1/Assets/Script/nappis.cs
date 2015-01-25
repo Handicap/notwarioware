@@ -18,8 +18,12 @@ public class nappis : MonoBehaviour {
     public float pyorimisnopeus;
     public bool kasvu;
 
+    public GameObject kontrolleri;
+
 	// Use this for initialization
 	void Start () {
+
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
 
         int rand = UnityEngine.Random.Range(1, 6);
 
@@ -130,7 +134,7 @@ public class nappis : MonoBehaviour {
     public void win()
     {
         voittotassu.SendMessage("activ", target.position);
-
+        StartCoroutine(thatcoroutine());
     }
 
 
@@ -149,13 +153,38 @@ public class nappis : MonoBehaviour {
 
     IEnumerator thiscoroutine()
     {
-        yield return new WaitForSeconds(2.1f);
+        yield return new WaitForSeconds(1.1f);
         Destroy(gameObject);
         Destroy(space);
         Destroy(up);
         Destroy(down);
         Destroy(left);
         Destroy(right);
+
+        Debug.Log("you lose");
+
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.vahennaelama();
+        skripti.randomkentta();
+
+        /*
+            public Transform space;
+    public Transform up;
+    public Transform down;
+    public Transform left;
+    public Transform right;*/
+
+    }
+
+    IEnumerator thatcoroutine()
+    {
+        yield return new WaitForSeconds(3.1f);
+
+        Debug.Log("you win");
+
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.lisaapiste();
+        skripti.randomkentta();
 
         /*
             public Transform space;

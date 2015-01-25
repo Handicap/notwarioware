@@ -13,10 +13,12 @@ public class hadu : MonoBehaviour {
 
     public int index = 0;
 
+    public GameObject kontrolleri;
+
     Animator anim;
 	// Use this for initialization
 	void Start () {
-
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
         anim = GetComponent<Animator>();
 	}
 	
@@ -116,6 +118,7 @@ public class hadu : MonoBehaviour {
 
         Debug.Log("u lose");
         anim.SetBool("fail", true);
+        StartCoroutine(losecoroutine());
     }
 
     public void win()
@@ -127,6 +130,23 @@ public class hadu : MonoBehaviour {
         {
             vaki[i].transform.SendMessage("pum");
         }
+        StartCoroutine(wincoroutine());
 
+    }
+
+    IEnumerator losecoroutine()
+    {
+        yield return new WaitForSeconds(2.5f);
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.vahennaelama();
+        skripti.randomkentta();
+    }
+
+    IEnumerator wincoroutine()
+    {
+        yield return new WaitForSeconds(2.5f);
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.lisaapiste();
+        skripti.randomkentta();
     }
 }
