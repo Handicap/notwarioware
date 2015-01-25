@@ -10,10 +10,13 @@ public class golfball : MonoBehaviour {
     public float speedleft;
     public float speedright;
 
+    public GameObject kontrolleri;
+
 	// Use this for initialization
 	void Start () {
 
         speed = speed * invert;
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
 	}
 	
 	// Update is called once per frame
@@ -127,11 +130,19 @@ public class golfball : MonoBehaviour {
     {
         Debug.Log("you win");
 
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.lisaapiste();
+        skripti.randomkentta();
+
     }
 
     void lose()
     {
         Debug.Log("you lose");
+
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.vahennaelama();
+        skripti.randomkentta();
 
     }
 

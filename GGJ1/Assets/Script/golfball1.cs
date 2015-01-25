@@ -10,9 +10,11 @@ public class golfball1 : MonoBehaviour {
     public float speedleft;
     public float speedright;
 
+    public GameObject kontrolleri;
+
 	// Use this for initialization
 	void Start () {
-
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
         
 	}
 	
@@ -127,11 +129,19 @@ public class golfball1 : MonoBehaviour {
     {
         Debug.Log("you win");
 
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.lisaapiste();
+        skripti.randomkentta();
+
     }
 
     void lose()
     {
         Debug.Log("you lose");
+
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.vahennaelama();
+        skripti.randomkentta();
 
     }
 

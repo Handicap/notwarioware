@@ -8,9 +8,12 @@ public class duett : MonoBehaviour {
     private bool alustus = false;
     public Transform hepo;
 
+    public GameObject kontrolleri;
+
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
 	}
 	
 	// Update is called once per frame
@@ -40,6 +43,10 @@ public class duett : MonoBehaviour {
         //transform.position = Vector3.MoveTowards(transform.position, target.position, step);
         
         //Destroy(gameObject);
+
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.lisaapiste();
+        skripti.randomkentta();
 
 
     }

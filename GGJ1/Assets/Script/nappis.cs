@@ -15,6 +15,7 @@ public class nappis : MonoBehaviour {
     public Transform haviotassu2;
 
     public float kasvunopeus;
+    public float pyorimisnopeus;
     public bool kasvu;
 
 	// Use this for initialization
@@ -57,8 +58,12 @@ public class nappis : MonoBehaviour {
         if (kasvu)
         {
             transform.localScale += new Vector3(kasvunopeus, kasvunopeus, kasvunopeus);
+            if (transform.localScale.x > 0.6f) kasvunopeus = kasvunopeus - 2f * Time.deltaTime;
+            else kasvunopeus = 0;
+            transform.Rotate(Vector3.right, 10);
             StartCoroutine(thiscoroutine());
-
+            transform.Translate(0, 0.05f, 0, Space.World);
+            
         }
 
 
@@ -144,7 +149,7 @@ public class nappis : MonoBehaviour {
 
     IEnumerator thiscoroutine()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(2.1f);
         Destroy(gameObject);
         Destroy(space);
         Destroy(up);

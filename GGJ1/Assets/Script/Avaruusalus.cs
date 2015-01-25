@@ -9,14 +9,25 @@ public class Avaruusalus : MonoBehaviour {
     public float speeddown;
     public float speedleft;
     public float speedright;
+
+    public GameObject kameraobj;
+
+    public GameObject kontrolleri;
+
 	// Use this for initialization
 	void Start () {
-	
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
 	}
 	
 	// Update is called once per frame
     void Update()
     {
+
+        if (kameraobj.camera.WorldToScreenPoint(transform.position).x > kameraobj.camera.pixelWidth) lose();
+        if (kameraobj.camera.WorldToScreenPoint(transform.position).y > kameraobj.camera.pixelHeight) lose();
+        if (kameraobj.camera.WorldToScreenPoint(transform.position).x < 0) lose();
+        if (kameraobj.camera.WorldToScreenPoint(transform.position).y < 0) lose();
+
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             if (speedleft < speed) speedleft += stoppingspeed;
@@ -102,4 +113,25 @@ public class Avaruusalus : MonoBehaviour {
 
 
     }
+
+    void lose()
+    {
+        Debug.Log("you lose");
+
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.vahennaelama();
+        skripti.randomkentta();
+
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+
+        Debug.Log("you lose");
+
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
+        skripti.vahennaelama();
+        skripti.randomkentta();
+    }
+
 }

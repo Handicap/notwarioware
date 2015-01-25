@@ -63,7 +63,11 @@
      <Compile Include="Assets\Script\hockey_target.cs" />
      <Compile Include="Assets\Script\horse.cs" />
      <Compile Include="Assets\Script\kelloskripti.cs" />
+<<<<<<< Updated upstream
      <Compile Include="Assets\Script\laser.cs" />
+=======
+     <Compile Include="Assets\Script\kelloskriptivoitto.cs" />
+>>>>>>> Stashed changes
      <Compile Include="Assets\Script\menuvalintakohde.cs" />
      <Compile Include="Assets\Script\menuvalitsin.cs" />
      <Compile Include="Assets\Script\meteori.cs" />
