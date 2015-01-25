@@ -16,6 +16,8 @@ public class trap : MonoBehaviour {
 
         type = ++count;
 
+        if (count > 25) count = 0;
+
         int rand = UnityEngine.Random.Range(-1, 2);
 
         transform.position = new Vector3(vali2 * rand, type * vali3 + vali); //= -1.8604f;

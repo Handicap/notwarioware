@@ -51,6 +51,7 @@
      <Compile Include="Assets\Script\camera.cs" />
      <Compile Include="Assets\Script\controller\Game_logic_controller.cs" />
      <Compile Include="Assets\Script\controller\Singleton.cs" />
+     <Compile Include="Assets\Script\controller\introctrl.cs" />
      <Compile Include="Assets\Script\controller\levelsailo.cs" />
      <Compile Include="Assets\Script\duett.cs" />
      <Compile Include="Assets\Script\golfball.cs" />
