@@ -55,6 +55,7 @@
      <Compile Include="Assets\Script\duett.cs" />
      <Compile Include="Assets\Script\golfball.cs" />
      <Compile Include="Assets\Script\golfball1.cs" />
+     <Compile Include="Assets\Script\hadu.cs" />
      <Compile Include="Assets\Script\haviotassu.cs" />
      <Compile Include="Assets\Script\hockey_eye.cs" />
      <Compile Include="Assets\Script\hockey_selector.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Script\hockey_target.cs" />
      <Compile Include="Assets\Script\horse.cs" />
      <Compile Include="Assets\Script\kelloskripti.cs" />
+     <Compile Include="Assets\Script\laser.cs" />
      <Compile Include="Assets\Script\menuvalintakohde.cs" />
      <Compile Include="Assets\Script\menuvalitsin.cs" />
      <Compile Include="Assets\Script\meteori.cs" />
@@ -83,6 +85,7 @@
      <Compile Include="Assets\Script\tvkasi.cs" />
      <Compile Include="Assets\Script\tvpeli_sheriff.cs" />
      <Compile Include="Assets\Script\tvpeli_tv.cs" />
+     <Compile Include="Assets\Script\vaki.cs" />
      <Compile Include="Assets\Script\vana.cs" />
      <Compile Include="Assets\Script\voittotassu.cs" />
  <Reference Include="UnityEngine.UI">
