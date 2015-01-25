@@ -7,10 +7,13 @@ public class starship : MonoBehaviour {
     public bool losed = false;
     Animator anim;
 
+    public GameObject kontrolleri;
+
 	// Use this for initialization
 	void Start () {
 
         anim = GetComponent<Animator>();
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
 	}
 	
 	// Update is called once per frame
@@ -57,18 +60,24 @@ public class starship : MonoBehaviour {
 
     void win()
     {
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
         Debug.Log("you win");
         speed = 0;
         speed2 = 0;
+        skripti.lisaapiste();
+        skripti.randomkentta();
     }
 
     void lose()
     {
+        Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
         anim.SetBool("losed", true);
         Debug.Log("you lose");
         losed = true;
         speed = 0;
         speed2 = 0;
+        skripti.vahennaelama();
+        skripti.randomkentta();
 
     }
 

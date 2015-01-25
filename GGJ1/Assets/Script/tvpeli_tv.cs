@@ -44,7 +44,7 @@ public class tvpeli_tv : MonoBehaviour {
 
         //sheriffin kosto
 
-        if (ohjelmajarjestys > 2 && !sheriffiarvottu)
+        if (!sheriffiarvottu)
         {
             sheriffchance = Random.Range(0, ohjelmat.Length - ohjelmajarjestys+1);
             sheriffiarvottu = true;
@@ -104,7 +104,7 @@ public class tvpeli_tv : MonoBehaviour {
             kasiskripti.ammuttu = true;
 
             Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
-            skripti.lives--;
+            skripti.vahennaelama();
             skripti.randomkentta();
         }
 

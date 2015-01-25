@@ -26,9 +26,12 @@ public class oikeaPannu : MonoBehaviour {
 
     public Vector3 sivupaikka;
 
+    public GameObject kontrolleri;
+
 	// Use this for initialization
 	void Start () {
-	
+
+        kontrolleri = GameObject.FindGameObjectWithTag("GameController");
 	}
 	
 	// Update is called once per frame
@@ -50,15 +53,28 @@ public class oikeaPannu : MonoBehaviour {
         }
         else
         {
+            Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
             if (kasi.transform.position.x < maxOsuu && kasi.transform.position.x > minOsuu) osuu = true;
             kahviosuu1.SendMessage("uusipaikka", kahvipaikka1);
             kahviosuu2.SendMessage("uusipaikka", kahvipaikka2);
-            
-            if (osuu) kahviohi.SendMessage("uusipaikka", kahvipaikka3);
+
+            if (osuu)
+            {
+                kahviohi.SendMessage("uusipaikka", kahvipaikka3);
+                skripti.lisaapiste();
+                skripti.randomkentta();
+
+            }
+            else
+            {
+                skripti.vahennaelama();
+                skripti.randomkentta();
+            }
 
 
         }
 
+        
 
 	}
 

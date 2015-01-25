@@ -42,7 +42,7 @@ public class tvkasi : MonoBehaviour {
         paskaruutu.SetActive(true);
 
         Game_logic_controller skripti = kontrolleri.GetComponent<Game_logic_controller>();
-        skripti.totalscore++;
+        skripti.lisaapiste();
         skripti.randomkentta();
     }
 }

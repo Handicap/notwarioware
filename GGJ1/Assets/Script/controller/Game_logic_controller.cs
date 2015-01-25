@@ -23,6 +23,10 @@ public class Game_logic_controller : MonoBehaviour {
         [Range(0f, 1f)]
         public float fadeSpeed = 1.5f;          // Speed that the screen fades to and from black.
 
+    private bool pistelisatty = false;
+    private bool henkilahtenyt = false;
+
+
     void Awake()
     {
         //Time.fixedDeltaTime ehkä pitää implementoida jos fysiikat sekoilee
@@ -31,6 +35,9 @@ public class Game_logic_controller : MonoBehaviour {
         // Set the texture so that it is the the size of the screen and covers it.
         guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
         guiTexture.enabled = true;
+
+        pistelisatty = false;
+        henkilahtenyt = true;
         
     }
 
@@ -93,5 +100,15 @@ public class Game_logic_controller : MonoBehaviour {
         {
             pelatut[i] = false;
         }
+    }
+
+    public void vahennaelama()
+    {
+        if (!henkilahtenyt) lives--;
+    }
+
+    public void lisaapiste()
+    {
+        if (pistelisatty) totalscore++;
     }
 }
